@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <title>Utkarsh Gym</title>
+
+    <style>
+        body{
+            background: url('img/bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+       
+        #left img{
+            padding-left: 5px;
+            padding-top: 5px;
+            width: 3em;
+        }
+        .text{
+            font-size: large;
+            font-family: 'Merienda', 'cursive';
+            display: inline;
+            font-weight: bolder;
+
+        }
+        #right{
+            float: right;
+            margin-right: 50px;
+        }
+        .link{
+            color: black;
+            text-decoration: none;
+            font-family: 'Merienda', 'cursive';
+            padding: 5px;
+            margin: 5px;
+            margin-right: 20px;
+            font-weight: bolder;
+        }
+        .container{
+            border: 2px solid black;
+            display: inline-block;
+            margin-left: 7%;
+            margin-top: 8%;
+            padding: 20px;
+            border-radius: 7px;
+
+        }
+
+        .input{
+            font-family: 'Baloo Bhai', cursive;
+            text-align: center;
+            display: block;
+            width: 300px;
+            padding: 1px;
+            border: 2px solid black;
+            margin: 11px auto;
+            font-size: 25px;
+            border-radius: 8px;
+            background: none;
+        }
+      
+        .halfwidth{
+            display: inline;
+            width: 150px;
+            color: red;
+        }
+        button{
+            float: right;
+            background-color: green;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <!-- for left section-->
+        <div id="left">
+            <img src="img/logo2.png" alt="logo"><br>
+            <span class="text">
+                Local Gym
+            </span>
+        
+
+            <!-- for right section-->
+            <div id="right">
+                <a href="#" class="link">Home</a>
+                <a href="#trial" class="link">Trial Call</a>
+                <a href="#contact" class="link">Contact us</a>
+                <a href="#aboutus" class="link">About us</a>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <form>
+            <input type="text" class="input"  name="" placeholder="Enter your Name" required>
+            <input type="number" class="input"  name="" placeholder="Enter your Age" required>
+            <input type="text" class="input"  name="" placeholder="Enter your Gender" required>
+            <input type="email" class="input"  name="" placeholder="Enter your E-mail" required>
+            <input type="tel" class="input" name="" placeholder="Enter your Phone Number" pattern="[0-9]{10}" required>            <br>
+            <input type="reset" class="input halfwidth">
+            <button class="input halfwidth">Submit </button>
+        </form>
+    </div>
+    
+</body>
+</html>
